@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: black;
+}
+
+h2{
+    font-size: 6rem;
+    color: #333;
+    font-weight: 500;
+}
+span{
+    animation: brilho 1s linear infinite;
+}
+
+@keyframes brilho {
+    0%,80% {
+        color: #333;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 40px #fff,
+                     0 0 80px #fff,
+                     0 0 120px #fff,
+                     0 0 160px #fff;
+    }
+}
